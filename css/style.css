@@ -1,0 +1,314 @@
+/* reset */
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+p {
+    margin-bottom: 0.8rem;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 1rem;
+}
+
+a {
+    color:#333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #eee;
+    color: #333;
+}
+
+strong {
+    color: #f1c40f;
+    font-weight: 400;
+}
+
+em {
+    color: #555;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* class */
+
+.container {
+    display: block;
+    max-width: 1200px;
+    margin:auto;
+}
+
+.title {
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 3.3rem;
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+
+/* vp + header */
+
+.vp-container {
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+
+header {
+    padding:1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.vp-logo {
+    margin-bottom: 0;
+    font-family: 'Tangerine', cursive;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.vp-logo i {
+    color: #f1c40f;
+    font-size:1.5rem;
+    margin-right: 0.5rem;
+}
+
+.vp-logo a {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+header a {
+    color:#fff;
+}
+
+header ul {
+    display: flex;
+    gap:1rem;
+}
+
+header ul li a:hover {
+    color: #f1c40f;
+    transition: 0.4s ease-in;
+}
+
+.vp {
+    flex:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/frame.jpg') center center/cover;
+    height: 800px;
+}
+
+.vp-content {
+    max-width: 800px;
+    text-align: center;
+    color:#fff;
+}
+
+.vp-content h1 {
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+}
+
+.vp-content p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+
+/* offer */
+
+.offer {
+    padding: 10rem 1rem;
+}
+
+.offer-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.offer-elem {
+    border: 1px solid #ddd;
+    flex:1;
+    background-color: #fff;
+}
+
+.offer-elem-img {
+    width:100%;
+}
+
+.offer-elem-text {
+    padding: 2rem;
+    text-align: center;
+}
+
+.offer-separator {
+    height: 2px;
+    width: 50px;
+    margin: 1rem auto;
+    background: #333;
+}
+
+/* who */
+
+.who {
+    display: grid;
+    grid-template-areas: 
+    "who-img who-text who-text";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+}
+
+
+
+.who-img {
+    background: url(/img/team.jpg) center center/cover;
+    width:100%;
+    grid-area: who-img;
+}
+
+.who-text {
+    grid-area: who-text;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:auto;
+    padding: 6.5rem;
+}
+
+.who-text h2 {
+    margin-bottom: 2rem;
+}
+
+.who-text p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+/* reviews */
+
+.reviews {
+    padding: 5rem 1rem;
+}
+
+.reviews-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews-elem {
+    background: #fff;
+    border-radius: 5px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.reviews-elem-text {
+    padding: 0 2rem;
+}
+
+.reviews-elem-text p i {
+    margin: 0.2rem;
+}
+
+.reviews-elem-profil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.reviews-elem-profil img {
+    width: 50px;
+    border-radius: 50px;
+    margin-bottom: 0.5rem;
+}
+
+.reviews-elem-profil p {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+/* contact */
+
+.contact {
+    padding: 6rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-form input {
+    background: #333;
+    border:0;
+    border-bottom: 1px solid #555;
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: #fff;
+    outline: 0;
+    margin-bottom: 1rem;
+}
+
+.contact-form button {
+    display: block;
+    margin: 3rem auto;
+    padding: 1rem 2rem;
+    border:0;
+    border-radius: 30px;
+    background: #f1c40f;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #ddd;
+    color: #333;
+    transition: 0.4s ease-in;
+} 
+
+/* footer */
+
+footer {
+    background: #444;
+    padding: 4rem 1rem;
+    color:#fff;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0;
+}
