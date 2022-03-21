@@ -1,0 +1,94 @@
+/* class */
+
+.title {
+    font-size:1.8rem;
+}
+
+/* vp + header */
+
+header {
+    flex-direction: column;
+    justify-content: center;
+    gap:1rem;
+}
+
+header ul {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;    
+}
+
+header ul li {
+    border-bottom: 1px solid #ddd;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+}
+
+header ul li:hover {
+    border-bottom: 1px solid #f1c40f;
+}
+
+.vp {
+    max-height:600px;
+}
+
+.vp-content h1 {
+    font-size: 1.8rem;
+}
+
+.vp-content p {
+    font-size: 1.2rem;
+    padding:0 3rem;
+    font-weight: 400;
+}
+
+/* offer */
+
+.offer {
+    padding: 5rem 1rem;
+}
+
+.offer-list {
+    flex-direction: column;
+}
+
+/* who */
+
+.who {
+    grid-template-areas: 
+    "who-img"
+    "who-text";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.who-img {
+    height:100%;
+}
+
+.who-text {
+    padding: 3rem 3rem;
+}
+
+/* reviews */
+
+
+
+.reviews-elem-text {
+    font-size: 0.85rem;
+}
+
+/* contact */
+
+.contact {
+    padding:4rem 3rem;
+}
+
+.contact-form input {
+    font-size: 1rem;
+}
+
+.contact-form button {
+    font-size: 1rem;
+}
+
